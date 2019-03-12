@@ -1,5 +1,11 @@
-.App {
+* {
   text-align: center;
+  background-color: rgb(80, 138, 135);
+  color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .App-logo {
