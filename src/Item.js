@@ -2,7 +2,7 @@ import React from 'react';
 
 const Item = ({ id, name, purchased, handleClick }) => (
   <li
-  style={ purchased ? { ...styles.item, ...styles.purchased } : styles.item }
+  style={ purchased ? { ...styles.purchased } : { ...styles.item }}
   onClick={() => handleClick(id)}
   >
 {name}
@@ -11,7 +11,7 @@ const Item = ({ id, name, purchased, handleClick }) => (
 
 const styles = {
   item: { cursor: 'pointer' },
-  complete: { color: 'grey', textDecoration: 'line-through' },
+  purchased: { color: 'grey', textDecoration: 'line-through' },
  };
  
  export default Item;

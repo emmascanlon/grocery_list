@@ -7,7 +7,7 @@ class GroceryForm extends React.Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addItem(this.state.name);
+    this.props.addThing(this.state.name);
     this.setState({ name: '' })
   }
 

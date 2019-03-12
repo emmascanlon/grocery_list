@@ -10,7 +10,7 @@ class App extends Component {
     return Math.floor((1 + Math.random()) * 1000)
   };
 
-  addItem = (name) => {
+  addThing = (name) => {
     const item = { name, id: this.getId(), purchased: false, }
     this.setState({
       items: [item, ...this.state.items]
@@ -34,8 +34,8 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-          <GroceryForm addItem={this.addItem} />
-          <List name="Grocery List" items={this.state.items} handleClick={this.handleClick}/>
+          <GroceryForm addThing={this.addThing} />
+          <List name="Grocery List" things={this.state.items} handleClick={this.handleClick}/>
          </div>
       );
     }
